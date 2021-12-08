@@ -12,6 +12,16 @@ directly rejecting, or refusing to store or forward, certain Bitcoin messages
 to peers in the network. Effectively, this software treats Bitcoins as having
 zero or negative value. (Which they do.)
 
+## Usage
+
+After installing [Go](https://go.dev):
+
+```go
+go install github.com/DrJosh9000/democracy@latest
+```
+
+A binary called `democracy` should now exist in your `~/go/bin`. Run it
+
 ## What about other blockchains, cryptocurrencies, NFTs?
 
 If someone wants to take the concept and implement it for an undemocratic

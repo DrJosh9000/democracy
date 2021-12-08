@@ -39,12 +39,12 @@ import (
 
 // flags
 var (
-	dialSeeds     = flag.Bool("dial_seeds", true, "Dial the seed addresses; set to false (this significantly reduces effectiveness)")
+	dialSeeds     = flag.Bool("dial_seeds", true, "Dial the seed addresses; set to false to disable (this significantly reduces effectiveness)")
 	bitcoinPort   = flag.Int("btc_port", 8333, "Port for listening for bitcoin; set to 0 to disable inbound connections")
 	httpPort      = flag.Int("http_port", 9333, "Port for HTTP listening; set to 0 to disable HTTP server")
 	localAddr     = flag.String("local_addr", "", "ip:port combination to advertise to peers. If empty or unset, the host value is automatically detected using api.ipify.org and -btc_port is used for the port.")
 	verbosity     = flag.Bool("v", false, "Log many more messages")
-	inboundConns  = flag.Int("inbound_conns", 500, "Limit on outbound connection count")
+	inboundConns  = flag.Int("inbound_conns", 500, "Limit on inbound connection count")
 	outboundConns = flag.Int("outbound_conns", 500, "Limit on outbound connection count")
 )
 
