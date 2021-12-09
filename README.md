@@ -16,7 +16,7 @@ zero or negative value. (Which they do.)
 
 After installing [Go](https://go.dev), you can run:
 
-```go
+```shell
 go install github.com/DrJosh9000/democracy@latest
 ```
 
